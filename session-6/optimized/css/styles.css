@@ -6,8 +6,6 @@ body {
   line-height: 1.5;
   font-size: 100%;
   position: relative;
-  /* font-family: 'Open Sans', sans-serif; */
-  /* font-family: 'Young Serif'; */
 }
 
 .hidden{
@@ -53,7 +51,6 @@ body{
 }
 
 .header p{
-  /*font-family: OpenSans(Regular) */
 	font-size: 13px;
   /*letter spacing: 50*/
 	line-height: 24px;
