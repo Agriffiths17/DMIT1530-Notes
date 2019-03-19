@@ -1,0 +1,25 @@
+ctrl + / comment in vscode
+emmet is the shit use it
+flexbox row x axis = Justify Content y axis = align items
+flexbox column x axis = align items y axis = Justify Content
+100% font size/ default font size is 16px it also equals 1em and 1rem
+Block level elements can take a height and a width
+Inline elements are as wide and as tall as the content
+to change how an elements display in css you change its display property
+with normal box model you have to subtract all padding and border from it
+centering a horizontal block model is margin:0 auto;
+to switch the box model: *,
+
+*::before,
+
+*::after {
+  
+box-sizing: border-box;
+
+}
+block level elements must have width else they take it from the parent
+widthbox = ((parentWidth - ( margin-right * gap) / #box)
+you need the spaces when doing calculations
+gap is the space between columns
+Sites: Emmet Cheat Sheats, CSS Tricks Flexbox, MDN HTML docs, MDN CSS docs, Dominait.me, cssgrid.io, flexbox.io, flaticon, google fonts, cssfontstack, material.io icons, fontawesome
+Add ons: Lorem Ipsum, Live Server, htmltagwrap, CSS Peek
