@@ -20,24 +20,85 @@ header{
 }
 .fa-bars{
   font-size: 2rem;
-  margin-left: 18px;
+  padding-left: 18px;
   padding-top: 20px;
   float: left;
   color: lightgrey;
 }
+.red-bar{
+  height: 2px;
+  width: 76px;
+  margin-left: 207px;
+}
 .profile-pic{
-  background-image: url(img/profilepic.jpg);
+  display: flex;
+  align-items: center;
+  padding-top: -72px;
+  margin: 0 auto;
   height: 111px;
   width: 111px;
 }
-@media(max-width: 480px){
+.first-name{
+  color: white;
+  font-size: 2rem;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+.tag-line{
+  color: lightgray;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+header h3{
+  color: white;
+  font-size: 1.1rem;
+  padding-top: 10px;
+  margin: 0 auto;
+  height: 49px;
+  width: 265px;
+  display: flex;
+  justify-content: center;
+}
+.blue-button{
+  margin-top: 10px;
+  background-image: url(../img/blue-button.png);
+  background-repeat: no-repeat;
+}
+.red-button{
+
+  background-image: url(../img/red-button.png);
+  background-repeat: no-repeat;
+}
+.netlify{
+  height: 73px;
+  width: 124px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+@media(min-width: 480px){
   .phone{
-    margin-left: 349px;
+    padding-left: 340px;
     flex-wrap: wrap;
   }
   .email{
-    margin-left: 323px;
+    padding-left: 280px;
     flex-wrap: wrap;
     padding-top: 28px;
   }
+
+li{
+  list-style: none;
+}
+}
+.UX{
+  background-image: url(../img/UX.png);
+  background-repeat: no-repeat;
+  height: 228px;
+  width: 228px;
+  margin: 0 auto;
 }
