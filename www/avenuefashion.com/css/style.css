@@ -1,4 +1,18 @@
 /*! minireset.css v0.0.4 | MIT License | github.com/jgthms/minireset.css */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 html,
 body,
 p,
@@ -45,16 +59,6 @@ input,
 select,
 textarea {
   margin: 0;
-}
-
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-* html, html:before, html:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
 }
 
 img,
@@ -247,31 +251,68 @@ h6 {
 }
 
 .client-sign-up {
-  padding: 1rem;
-  max-width: 960px;
   margin: 0 auto;
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 1rem;
 }
 
-.client-sign-up div {
+.client-sign-up label {
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: #999;
+  display: block;
+}
+
+.client-sign-up input, .client-sign-up select, .client-sign-up textarea {
   border: 1px solid grey;
-  background: #fff;
-  padding: 1rem 0;
+  background-color: #fff;
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: #444;
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
 }
 
-@media (min-width: 800px) {
+.client-sign-up input[type="radio"] {
+  width: 2rem;
+  background: #fff;
+}
+
+.client-sign-up textarea {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 350px;
+  min-height: 350px;
+}
+
+@media (min-width: 720px) {
   .client-sign-up {
-    background: blue;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+    grid-column-gap: 1.5rem;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "first last" "email email" "password confirm";
   }
-  .client-sign-up div {
-    width: 45%;
+  :nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: first;
+  }
+  :nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: last;
+  }
+  :nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: email;
   }
 }
 /*# sourceMappingURL=style.css.map */
