@@ -54,10 +54,20 @@
                             <input type="text" id="passwordConfirm" name="passwordConfirm">
                     </div>
                     <div class="email-frequency">
+                        <style>
+                            select{
+                                appearance: none;
+                                -webkit-appearance: none;
+                                background: url(./img/down.svg) no-repeat right -5px;
+                                
+                            }  
+                        </style>
+                        <label for="">Email Frequency</label>
                         <select>
-                            <option value="no">No</option>
-                            <option value="yes">Yes</option>
-                            <option value="weekly">Weekly</option>
+                            <option value="">Daily</option>
+                            <option value="">Weekly</option>
+                            <option value="">Monthly</option>
+                            <option value="">Quarterly</option>
                         </select>
                     </div>
                     <div class="phone-number">
@@ -65,12 +75,87 @@
                             <input type="text" id="phoneNumber" name="phoneNumber">
                     </div>
                     <div class="fine-print">
-                        <input type="radio"> Do you agree for us to sell your information for money and beer and favoures to really bad people from Russia.
+                        <style>
+                            .radio{
+                                width: 1rem;
+                                height: 1rem;
+                                border-radius: 50%;
+                                border: 1px solid grey;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            .dot-view{
+                                width: 45%;
+                                height: 45%;
+                                border-radius: 50%;
+                                background: lightgrey;
+                            }
+                        </style>
+
+                        <div class="radio-button">
+                            <div class="radio" data-clicked="false">
+                                <div class="dot"></div>
+                                <!--<div class="label">I agree to the terms and conditions of the website. I may opt out at any time.</div>
+                            </div>-->
+                        </div>
+                        <script>
+                            const radioButton = document.querySelector('.radio');
+                            const dot = document.querySelector('.dot')
+                            radioButton.addEventListener('click', ()=>{
+                                dot.classList.toggle('dot-view')
+                            })
+
+                        </script>
+
                     </div>
                     <div class="message">
                         <label for="">Send Us A Message <span>(Optional)</span></label>
                         <textarea name="" id="" cols="30" rows="10"></textarea>
                     </div>
+
+                    <style>
+                        .checkbox{
+                            display: inline-block;
+                            position: relative;
+                            width: 2.5rem;
+                            height: 2.5rem;
+                            border: 1px solid grey;
+                        }
+                        .label{
+                          display: inline;  
+                            
+                        }
+                        .hidden{
+                            display: none;
+                        }
+                    </style>
+                    <div class="checkbox">
+                        <div class="box">
+                            <div class="checked hidden">
+                                <img src="img/check.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="label"></div>
+                    </div>
+
+                    <script>
+                        const checkBox = document.querySelector('.box');
+                        const check = document.querySelector('.checked');
+                        const isChecked = false;
+                        checkBox.addEventListener('click', ()=>{
+                            if(isChecked){
+                                check.style.opacity=0
+                                isCheck = !isChecked
+                            }else{
+                                check.style.opacity = 1;
+                                isCheck = !isChecked
+                            }
+                        })
+                    </script>
+
+
+
                 </form>
                   
                 </aside>
