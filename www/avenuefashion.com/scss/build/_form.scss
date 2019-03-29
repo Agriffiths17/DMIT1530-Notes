@@ -25,7 +25,7 @@
         background: #fff;
     }
     textarea{
-        max-width:100%;
+        max-width: 100%;
         min-width: 100%;
         max-height: 350px;
         min-height: 350px;
@@ -40,7 +40,8 @@
         grid-template-areas: 
         "first last"
         "email email"
-        "password confirm";
+        "password confirm"
+        "dropdown phone";
     }
     :nth-child(1){
         grid-area: first;
@@ -51,5 +52,28 @@
     :nth-child(3){
         grid-area: email;
     }
-
+    :nth-child(4){
+        grid-area: password;
+    }
+    :nth-child(5){
+        grid-area: confirm;
+    }
+    :nth-child(6){
+        grid-area: dropdown;
+    }
+    :nth-child(7){
+        grid-area: phone;
+    }
+    .fine-print{
+        grid-row: 5;   
+        grid-column: span 2;   
+        display: flex;
+        label{
+            margin-left: 1rem;                
+        }
+    }
+    .message{
+        grid-column: span 2;
+        grid-row: 6;
+    }
 }

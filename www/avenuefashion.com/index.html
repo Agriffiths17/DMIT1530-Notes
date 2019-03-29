@@ -11,157 +11,175 @@
 </head>
 
 <body>
-        <nav class="site-nav">
-                <ul class="nav-content">
-                    <li class="avenue-fashion"><h1>Avenue <span>Fashion</span></h1></li>
+    <nav class="site-nav">
+        <ul class="nav-content">
+            <li class="avenue-fashion">
+                <h1>Avenue
+                    <span>Fashion</span>
+                </h1>
+            </li>
+            <li>
+                <img class="menu-icon" src="img/menu.svg" alt="">
+                <ul class="list-view">
                     <li>
-                        <img class="menu-icon" src="img/menu.svg" alt="">
-                        <ul class="list-view">
-                            <li><a href="#">men</a></li>
-                            <li><a href="#">woman</a></li>
-                            <li><a href="#">the brand</a></li>
-                            <li><a href="#">local stores</a></li>
-                            <li><a href="#">look book</a></li>
-                        </ul>
+                        <a href="#">men</a>
+                    </li>
+                    <li>
+                        <a href="#">woman</a>
+                    </li>
+                    <li>
+                        <a href="#">the brand</a>
+                    </li>
+                    <li>
+                        <a href="#">local stores</a>
+                    </li>
+                    <li>
+                        <a href="#">look book</a>
                     </li>
                 </ul>
-            </nav>
-            <header class="page-header">
-                <h1 class="title">Avenue Sign Up</h1>
-                <p class="tagline">rewards program</p>
-            </header>
-            <main>
-                <aside>
-                    <form id="client-sign-up" class="client-sign-up">
-                    <div class="fist-name">
-                        <label for="firstname">First Name</label>
-                        <input type="text" id="firstName" name="firstName">
-                    </div>
-                    <div class="last-name">
-                            <label for="lastname">Last Name</label>
-                            <input type="text" id="lastName" name="lastName">
-                    </div>
-                    <div class="email">
-                            <label for="email">Email</label>
-                            <input type="text" id="email" name="email">
-                    </div>
-                    <div class="password">
-                            <label for="password">Password</label>
-                            <input type="password" id="password" name="password">
-                    </div>
-                    <div class="password-confirm">
-                            <label for="passwordConfirm">Password Confirm</label>
-                            <input type="text" id="passwordConfirm" name="passwordConfirm">
-                    </div>
-                    <div class="email-frequency">
-                        <style>
-                            select{
-                                appearance: none;
-                                -webkit-appearance: none;
-                                background: url(./img/down.svg) no-repeat right -5px;
-                                
-                            }  
-                        </style>
-                        <label for="">Email Frequency</label>
-                        <select>
-                            <option value="">Daily</option>
-                            <option value="">Weekly</option>
-                            <option value="">Monthly</option>
-                            <option value="">Quarterly</option>
-                        </select>
-                    </div>
-                    <div class="phone-number">
-                            <label for="phoneNumber">Phone Number</label>
-                            <input type="text" id="phoneNumber" name="phoneNumber">
-                    </div>
-                    <div class="fine-print">
-                        <style>
-                            .radio{
-                                width: 1rem;
-                                height: 1rem;
-                                border-radius: 50%;
-                                border: 1px solid grey;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                            }
-                            .dot-view{
-                                width: 45%;
-                                height: 45%;
-                                border-radius: 50%;
-                                background: lightgrey;
-                            }
-                        </style>
-
-                        <div class="radio-button">
-                            <div class="radio" data-clicked="false">
-                                <div class="dot"></div>
-                                <!--<div class="label">I agree to the terms and conditions of the website. I may opt out at any time.</div>
-                            </div>-->
-                        </div>
-                        <script>
-                            const radioButton = document.querySelector('.radio');
-                            const dot = document.querySelector('.dot')
-                            radioButton.addEventListener('click', ()=>{
-                                dot.classList.toggle('dot-view')
-                            })
-
-                        </script>
-
-                    </div>
-                    <div class="message">
-                        <label for="">Send Us A Message <span>(Optional)</span></label>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                    </div>
-
+            </li>
+        </ul>
+    </nav>
+    <header class="page-header">
+        <h1 class="title">Avenue Sign Up</h1>
+        <p class="tagline">rewards program</p>
+    </header>
+    <main>
+        <aside>
+            <form id="client-sign-up" class="client-sign-up">
+                <div class="fist-name">
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstName" name="firstName">
+                </div>
+                <div class="last-name">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastName" name="lastName">
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email">
+                </div>
+                <div class="password">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="password-confirm">
+                    <label for="passwordConfirm">Password Confirm</label>
+                    <input type="text" id="passwordConfirm" name="passwordConfirm">
+                </div>
+                <div class="email-frequency">
                     <style>
-                        .checkbox{
-                            display: inline-block;
-                            position: relative;
-                            width: 2.5rem;
-                            height: 2.5rem;
-                            border: 1px solid grey;
-                        }
-                        .label{
-                          display: inline;  
-                            
-                        }
-                        .hidden{
-                            display: none;
+                        select {
+                            appearance: none;
+                            -webkit-appearance: none;
+                            background: url(./img/down.svg) no-repeat right -5px;
+
                         }
                     </style>
-                    <div class="checkbox">
-                        <div class="box">
-                            <div class="checked hidden">
-                                <img src="img/check.svg" alt="">
-                            </div>
+                    <label for="">Email Frequency</label>
+                    <select>
+                        <option value="">Daily</option>
+                        <option value="">Weekly</option>
+                        <option value="">Monthly</option>
+                        <option value="">Quarterly</option>
+                    </select>
+                </div>
+                <div class="phone-number">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="text" id="phoneNumber" name="phoneNumber">
+                </div>
+                <div class="fine-print">
+                    <style>
+                        .radio {
+                            width: 1rem;
+                            height: 1rem;
+                            border-radius: 50%;
+                            border: 1px solid grey;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        .dot-view {
+                            width: 45%;
+                            height: 45%;
+                            border-radius: 50%;
+                            background: grey;
+                        }
+                    </style>
+
+                    <div class="radio-button">
+                        <div class="radio">
+                            <div class="dot"></div>
                         </div>
-                        <div class="label"></div>
                     </div>
-
+                    <label for="fineprint">I agree to the terms and conditions of the website. I may opt out at any time.</label>
                     <script>
-                        const checkBox = document.querySelector('.box');
-                        const check = document.querySelector('.checked');
-                        const isChecked = false;
-                        checkBox.addEventListener('click', ()=>{
-                            if(isChecked){
-                                check.style.opacity=0
-                                isCheck = !isChecked
-                            }else{
-                                check.style.opacity = 1;
-                                isCheck = !isChecked
-                            }
-                        })
+                        const radioButton = document.querySelector('.radio');
+                        const dot = document.querySelector('.dot');
+                        radioButton.addEventListener('click', () => (
+                            dot.classList.toggle('dot-view')
+                        ))
                     </script>
+                </div>
+
+                <div class="message">
+                    <label for="">Send Us A Message
+                        <span>(Optional)</span>
+                    </label>
+                    <textarea tabindex="8"></textarea>
+                </div>
+
+                <style>
+                    .checkbox {
+                        display: inline-block;
+                        position: relative;
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        border: 1px solid grey;
+                    }
+
+                    .label {
+                        display: inline;
+
+                    }
+
+                    .hidden {
+                        display: none;
+                    }
+                </style>
+                <div class="checkbox">
+                    <div class="box">
+                        <div class="checked hidden">
+                            <img src="img/check.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="label"></div>
+                </div>
+
+                <script>
+                    const checkBox = document.querySelector('.box');
+                    const check = document.querySelector('.checked');
+                    const isChecked = false;
+                    checkBox.addEventListener('click', () => {
+                        if (isChecked) {
+                            check.style.opacity = 0
+                            isCheck = !isChecked
+                        } else {
+                            check.style.opacity = 1;
+                            isCheck = !isChecked
+                        }
+                    })
+                </script>
 
 
 
-                </form>
-                  
-                </aside>
-            </main>
-            <footer></footer>
-        
+            </form>
+
+        </aside>
+    </main>
+    <footer></footer>
+
     <script src="js/index.js"></script>
 </body>
 
