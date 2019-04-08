@@ -45,7 +45,43 @@
         </nav>
     </div>
 
-    <header class="container" style="padding:12rem 0; background: tomato; margin-top: 1rem;">
+
+    <style>
+        .dot {
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .dot-stroke {
+            border: 1px solid grey;
+        }
+
+        .dot-fill {
+            background: grey;
+        }
+    </style>
+
+    <header class="container p-5 text-center" style="background: antiquewhite;">
+        <!-- flex sm column larger row-->
+
+        <div class="row">
+            <div class="col-12 col-lg-11">
+                <h1>Site Name</h1>
+                <p>tag line</p>
+                <span class="badge badge-pill badge-dark">Dark</span>
+            </div>
+
+
+            <div class="col-12 col-lg-1 d-flex justify-content-center flex-lg-column">
+                <div class="dot dot-fill"></div>
+                <div class="dot dot-stroke"></div>
+                <div class="dot dot-stroke"></div>
+            </div>
+
+
+        </div>
 
     </header>
 
@@ -63,7 +99,7 @@
             </div>
             <div class="col-lg-6 p-lg-5">
                 <h2>creative
-                    <span class="d-block">kitcen</span>
+                    <span class="d-block">kitchen</span>
                 </h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, quam delectus vero iste repellendus itaque
                     beatae minima at, magnam ratione dolor aliquam, molestiae in nobis labore aspernatur aliquid dolore minus.</p>
@@ -83,7 +119,7 @@
             </div>
             <div class="col-lg-6 p-lg-5 oder-lg-1">
                 <h2>creative
-                    <span class="d-block">kitcen</span>
+                    <span class="d-block">kitchen</span>
                 </h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, quam delectus vero iste repellendus itaque
                     beatae minima at, magnam ratione dolor aliquam, molestiae in nobis labore aspernatur aliquid dolore minus.</p>
@@ -95,6 +131,31 @@
 
 
     </section>
+
+
+    <section class="container">
+        <div class="row no-gutters">
+            <div class="text-center col-12 col-md-4">
+                <img class="img-fluid p-3" src="https://picsum.photos/g/364/364?image=244" alt="">
+                <img class="img-fluid p-3" src="https://picsum.photos/g/364/590?image=400" alt="">
+            </div>
+
+            <div class="text-center col-12 col-md-4">
+                <img class="img-fluid p-3" src="https://picsum.photos/g/364/590?image=844" alt="">
+                <img class="img-fluid p-3" src="https://picsum.photos/g/364/364?image=70" alt="">
+            </div>
+
+            <div class="text-center col-12 col-md-4">
+                <img class="img-fluid p-3" src="https://picsum.photos/g/364/364?image=44" alt="">
+                <img class="img-fluid p-3" src="https://picsum.photos/g/364/590?image=85" alt="">
+            </div>
+
+        </div>
+    </section>
+
+
+
+
 
     <style>
         .circle {
