@@ -7,7 +7,7 @@
         font-family: "Montserrat";
         font-size: 14px;
         color: #999;
-        display: block;
+        display: inline;
     }
     input, select, textarea{
         border: 1px solid grey;
@@ -31,6 +31,7 @@
         min-height: 350px;
     }
 }
+
 @media(min-width: 720px){
     .client-sign-up{
         max-width: 800px;
@@ -73,7 +74,35 @@
         }
     }
     .message{
-        grid-column: span 2;
         grid-row: 6;
+        grid-column: span 2;
+
+    }
+    .checkbox-sign-up{
+        max-width: 800px;
+        margin: 0 auto;
+        grid-column-gap: 1.5rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "exclusive discount arrivals"
+        "contests everything coupons";
+        :nth-child(1){
+            grid-area: exclusive;
+        }
+        :nth-child(2){
+            grid-area: discount;
+        }
+        :nth-child(3){
+            grid-area: arrivals;
+        }
+        :nth-child(4){
+            grid-area: contests;
+        }
+        :nth-child(5){
+            grid-area: everything;
+        }
+        :nth-child(6){
+            grid-area: coupons;
+        }
     }
 }
