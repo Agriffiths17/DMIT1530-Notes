@@ -262,7 +262,7 @@ h6 {
   font-family: "Montserrat";
   font-size: 14px;
   color: #999;
-  display: block;
+  display: inline;
 }
 
 .client-sign-up input, .client-sign-up select, .client-sign-up textarea {
@@ -289,6 +289,21 @@ h6 {
   min-height: 350px;
 }
 
+.account {
+  font-family: "Montserrat";
+  font-size: 21px;
+  text-align: center;
+  border: 2px solid grey;
+  height: 55px;
+}
+
+.policy span {
+  color: #00c8c8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media (min-width: 720px) {
   .client-sign-up {
     max-width: 800px;
@@ -296,7 +311,7 @@ h6 {
     grid-column-gap: 1.5rem;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "first last" "email email" "password confirm";
+        grid-template-areas: "first last" "email email" "password confirm" "dropdown phone";
   }
   :nth-child(1) {
     -ms-grid-row: 1;
@@ -313,6 +328,56 @@ h6 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: email;
+  }
+  :nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: password;
+  }
+  :nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: confirm;
+  }
+  :nth-child(6) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: dropdown;
+  }
+  :nth-child(7) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: phone;
+  }
+  .fine-print {
+    -ms-grid-row: 5;
+    grid-row: 5;
+    grid-column: span 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .fine-print label {
+    margin-left: 1rem;
+  }
+  .message {
+    -ms-grid-row: 6;
+    grid-row: 6;
+    grid-column: span 2;
+  }
+  .register {
+    padding-left: 570px;
+    padding-top: 117px;
+  }
+  .language {
+    -ms-grid-row: 6;
+    grid-row: 6;
+    grid-column: span 2;
+  }
+  .clothing {
+    -ms-grid-row: 6;
+    grid-row: 6;
+    grid-column: span 1;
   }
 }
 /*# sourceMappingURL=style.css.map */

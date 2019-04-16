@@ -45,9 +45,12 @@
         <p class="tagline">rewards program</p>
     </header>
     <main>
+        <div>
+            <h1 class="register">Register</h1>
+        </div>
         <aside>
             <form id="client-sign-up" class="client-sign-up">
-                <div class="fist-name">
+                <div class="first-name">
                     <label for="firstname">First Name</label>
                     <input type="text" id="firstName" name="firstName">
                 </div>
@@ -129,13 +132,15 @@
                     </label>
                     <textarea tabindex="8"></textarea>
                 </div>
+            
 
+            <form id="checkboxSignUp" class="checkboxSignUp">
                 <style>
                     .checkbox {
                         display: inline-block;
                         position: relative;
-                        width: 2rem;
-                        height: 2rem;
+                        width: 2.5rem;
+                        height: 2.5rem;
                         border: 1px solid grey;
                     }
 
@@ -148,87 +153,158 @@
                         display: none;
                     }
                 </style>
-                <div class="checkbox-sign-up">
                     <div>
-                        <div class="checkbox">
-                            <div class="box">
-                                <div class="checked hidden">
-                                    <img src="img/check.svg" alt="">
-                                </div>
-                            </div>
+                        <div>
+                            <h2 class="signUp">Sign Up For</h2>
                         </div>
-                        <div class="label">Test label</div>
-                    </div>
-                    <div>
-                        <div class="checkbox">
-                            <div class="box">
-                                <div class="checked hidden">
-                                    <img src="img/check.svg" alt="">
+    
+                                <div class="checkbox">
+                                    <div class="box">
+                                        <div class="checked hidden">
+                                            <img src="img/check.svg" alt="">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="label">Test label</div>
+                                <div class="label">Exclusive Updates</div>
                     </div>
-                    <div>
-                        <div class="checkbox">
-                            <div class="box">
-                                <div class="checked hidden">
-                                    <img src="img/check.svg" alt="">
+    
+                            <div>
+                                <div class="checkbox">
+                                    <div class="box">
+                                        <div class="checked hidden">
+                                            <img src="img/check.svg" alt="">
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="label">Discounts/sales</div>
                             </div>
-                        </div>
-                        <div class="label">Test label</div>
-                    </div>
-                    <div>
-                        <div class="checkbox">
-                            <div class="box">
-                                <div class="checked hidden">
-                                    <img src="img/check.svg" alt="">
+    
+                            <div>
+                                <div class="checkbox">
+                                    <div class="box">
+                                        <div class="checked hidden">
+                                            <img src="img/check.svg" alt="">
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="label">New Arrivals</div>
                             </div>
-                        </div>
-                        <div class="label">Test label</div>
-                    </div>
-                    <div>
-                        <div class="checkbox">
-                            <div class="box">
-                                <div class="checked hidden">
-                                    <img src="img/check.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="label">Test label</div>
-                    </div>
-                    <div>
-                        <div class="checkbox">
-                            <div class="box">
-                                <div class="checked hidden">
-                                    <img src="img/check.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="label">Test label</div>
-                    </div>
-                </div>
-                <script>
-                    const checkBox = document.querySelector('.box');
-                    const check = document.querySelector('.checked');
-                    const isChecked = false;
-                    checkBox.addEventListener('click', () => {
-                        if (isChecked) {
-                            check.style.opacity = 0
-                            isCheck = !isChecked
-                        } else {
-                            check.style.opacity = 1;
-                            isCheck = !isChecked
-                        }
-                    })
-                </script>
 
-
+                            <div>
+                                <div class="checkbox">
+                                    <div class="box">
+                                        <div class="checked hidden">
+                                            <img src="img/check.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="label">Contests</div>
+                            </div>
+    
+    
+                            <div>
+                                <div class="checkbox">
+                                    <div class="box">
+                                        <div class="checked hidden">
+                                            <img src="img/check.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="label">Everything</div>
+                            </div>
+    
+    
+                            <div>
+                                <div class="checkbox">
+                                    <div class="box">
+                                        <div class="checked hidden">
+                                            <img src="img/check.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="label">Coupons</div>
+                            </div>    
+                        <script>
+                            const checkBox = document.querySelector('.box');
+                            const check = document.querySelector('.checked');
+                            const isChecked = false;
+                            checkBox.addEventListener('click', () => {
+                                if (isChecked) {
+                                    check.style.opacity = 0
+                                    isCheck = !isChecked
+                                } else {
+                                    check.style.opacity = 1;
+                                    isCheck = !isChecked
+                                }
+                            })
+                        </script>  
+                        <div>
+                            <div>
+                                <h2 class="optional">Preferences <span>(Optional)</span></h2>
+                            </div>  
+                            <div class="dropdown-menu">
+                                <div class="language">
+                                    <style>
+                                        select {
+                                            appearance: none;
+                                            -webkit-appearance: none;
+                                            background: url(./img/down.svg) no-repeat right -5px;
+                
+                                        }
+                                    </style>
+                                    <label for="">Language</label>
+                                    <select>
+                                        <option value="">English</option>
+                                        <option value="">French</option>
+                                        <option value="">Spanish</option>
+                                        <option value="">German</option>
+                                    </select>
+                                </div>   
+                                <div class="clothing">
+                                    <style>
+                                        select {
+                                            appearance: none;
+                                            -webkit-appearance: none;
+                                            background: url(./img/down.svg) no-repeat right -5px;
+                
+                                        }
+                                    </style>
+                                    <label for="">Do you prefer a size of clothing?</label>
+                                    <select>
+                                        <option value="">Small</option>
+                                        <option value="">Medium</option>
+                                        <option value="">Large</option>
+                                        <option value="">Extra Large</option>
+                                    </select>
+                                </div>
+                        </div>
+                        </div>  
+                        <div class="location">
+                            <style>
+                                select {
+                                    appearance: none;
+                                    -webkit-appearance: none;
+                                    background: url(./img/down.svg) no-repeat right -5px;
+        
+                                }
+                            </style>
+                            <label for="">Your Store Location</label>
+                            <select>
+                                <option value="">Edmonton</option>
+                                <option value="">Calgary</option>
+                                <option value="">Lethbridge</option>
+                                <option value="">Sherwood Park</option>
+                            </select>
+                        </div>
+                            <div>
+                                <h1 class="account">Create Account</h1>
+                            </div>    
+                            <div>
+                                <p class="policy">By clicking 'Create Account', you agree to our <span>Privacy Policy</span></p>
+                            </div>
 
             </form>
-
+        </form>
         </aside>
     </main>
     <footer></footer>
