@@ -1,0 +1,13 @@
+NAIT Install GATSBY
+npm install gatsby-cli -----node_modules
+
+----> node_modules\gatsby new sitname      (build gatsby site)
+
+
+Start Gatsby
+
+====> node_modules\.bin\gatsby develop
+
+
+UNIX KILL
+CTRL+C
