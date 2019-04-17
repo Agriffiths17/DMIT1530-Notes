@@ -1,0 +1,12 @@
+span{
+    color: aqua;
+}
+.navbar-brand{
+    font-size: 1.5rem;
+}
+.header-text, .header-link{
+    color: white;
+}
+.header-link{
+    padding-left: 10px;
+}
